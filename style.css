@@ -1,10 +1,17 @@
+body {
+    margin: 0;
+}
+.mainContent {
+    max-width: 1200px;
+    margin: 0 auto
+}
 .tabsWrapper {
     display: flex;
+    background-color: #f1f1f1;
 }
 .tabs {
     background-color: #f1f1f1;
     color: #020202;
     padding: 20px;
-    border-radius: 10px;
     cursor: pointer;
 }
