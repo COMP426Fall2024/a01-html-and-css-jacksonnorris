@@ -1,0 +1,10 @@
+.tabsWrapper {
+    display: flex;
+}
+.tabs {
+    background-color: #f1f1f1;
+    color: #020202;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
