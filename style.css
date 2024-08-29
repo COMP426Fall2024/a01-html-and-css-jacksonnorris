@@ -55,3 +55,13 @@ th>a {
     background-color: #d0d0d0;
     transition: all ease 500ms;
 }
+#greekBanner {
+    width: 100%;
+    max-height: 300px;
+}
+@media (max-width: 1200px) {
+    .mainContent {
+        max-width: 90%;
+        margin: 0 auto
+    }
+}
