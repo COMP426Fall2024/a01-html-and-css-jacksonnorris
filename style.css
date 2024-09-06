@@ -26,17 +26,26 @@ th>a {
     width: 100%;
     max-height: 300px;
 }
+.godsBanner>img {
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px #88888847;
+    max-width: 100%;
+}
 .godsDescription {
     margin-top: 20px;
     background-color: #f1f1f1;
     border-radius: 10px;
     padding: 10px 20px;
     line-height: 1.5em;
+    box-shadow: 0px 5px 5px #88888847;
 }
 .homeTable {
     width: 100%;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #f1f1f1;
+    box-shadow: 0px 5px 5px #88888847;
 }
 .mainContent {
     max-width: 1200px;
@@ -47,6 +56,14 @@ th>a {
 }
 .tableImg {
     width: 100%;
+    transition: 200ms ease all;
+}
+.otherSelect {
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+.tableImg:hover {
+    transform: scale(1.05);
 }
 .tabsWrapper {
     display: flex;
@@ -65,6 +82,12 @@ th>a {
 .tabs:hover {
     background-color: #d0d0d0;
     transition: all ease 500ms;
+}
+@media (max-width: 600px) {
+    .tabsWrapper {
+        flex-direction: column;
+        text-align: center;
+    }
 }
 @media (max-width: 1200px) {
     .mainContent {
