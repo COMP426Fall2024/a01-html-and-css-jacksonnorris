@@ -21,6 +21,7 @@
         <div>
             <label for="otherGods">Select who you want to learn more about</label>
             <select name="otherGods" id ="otherGods" onchange="changeContent()">
+                <option value="" disabled selected>Select an option</option>
                 <option value="0">Egyptian Gods</option>
                 <option value="1">Aztec Gods</option>
                 <option value="2">Norse Gods</option>
@@ -31,7 +32,7 @@
 </body>
 </html>
 <script>
-    const egpytianContent = `<div>Egyptian Content</div>`;
+    const egpytianContent = `<div class="godsBanner"><img src="egyptian-gods-banner.png"></div>`;
     const aztecContent = `<div>Aztec Content</div>`;
     const norseContent = `<div>Norse Content</div>`;
     const otherContent = [egpytianContent, aztecContent, norseContent];

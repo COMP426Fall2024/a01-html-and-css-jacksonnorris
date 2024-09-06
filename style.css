@@ -20,7 +20,7 @@ th {
     font-size: 1.6em;
 }
 th>a {
-    text-decoration: underline;
+    /* text-decoration: underline; */
 }
 .homeTable {
     width: 100%;
@@ -55,7 +55,7 @@ th>a {
     background-color: #d0d0d0;
     transition: all ease 500ms;
 }
-#greekBanner {
+.godsBanner {
     width: 100%;
     max-height: 300px;
 }
