@@ -1,6 +1,12 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
 }
+:root {
+    --primary: #F5EBE0;
+    --hover: #D6CCC2;
+    --selected: #E3D5CA;
+    --shadow: #88888847;
+}
 a {
     text-decoration: none;
 }
@@ -19,7 +25,7 @@ select {
     text-align: center;
     font-size: larger;
     border: none;
-    background-color: #d9d9d9;
+    background-color: var(--selected);
 }
 select:hover, option:hover {
     cursor: pointer;
@@ -39,24 +45,24 @@ th>a {
 }
 .godsBanner>img {
     border-radius: 10px;
-    box-shadow: 0px 5px 5px #88888847;
+    box-shadow: 0px 5px 5px var(--shadow);
     max-width: 100%;
 }
 .godsDescription {
     margin-top: 20px;
-    background-color: #f1f1f1;
+    background-color: var(--primary);
     border-radius: 10px;
     padding: 10px 20px;
     line-height: 1.5em;
-    box-shadow: 0px 5px 5px #88888847;
+    box-shadow: 0px 5px 5px var(--shadow);
 }
 .homeTable {
     width: 100%;
     /* border: 2px solid black; */
     padding: 10px 20px;
     border-radius: 10px;
-    background-color: #f1f1f1;
-    box-shadow: 0px 5px 5px #88888847;
+    background-color: var(--primary);
+    box-shadow: 0px 5px 5px var(--shadow);
 }
 .mainContent {
     max-width: 1200px;
@@ -76,12 +82,12 @@ th>a {
     /* display: flex; */
     /* flex-direction: column; */
     /* align-items: center; */
-    background: #f1f1f1;
+    background: var(--primary);
     /* height: 40px; */
     margin-left: -8px;
 }
 .otherSelect:hover, select:hover {
-    background-color: #d0d0d0;
+    background-color: var(--hover);
     transition: all ease 500ms;
 }
 .tableImg:hover {
@@ -89,20 +95,20 @@ th>a {
 }
 .tabsWrapper {
     display: flex;
-    background-color: #f1f1f1;
+    background-color: var(--primary);
 }
 .tabs {
-    background-color: #f1f1f1;
+    background-color: var(--primary);
     color: #020202;
     padding: 20px;
     cursor: pointer;
     font-size: 1.2em;
 }
 .selected {
-    background-color: #d9d9d9;
+    background-color: var(--selected);
 }
 .tabs:hover {
-    background-color: #d0d0d0;
+    background-color: var(--hover);
     transition: all ease 500ms;
 }
 #otherGods {
