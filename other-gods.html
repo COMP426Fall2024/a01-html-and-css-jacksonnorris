@@ -19,13 +19,26 @@
         <h1>Other Gods</h1>
         <div>
             <label for="otherGods">Select who you want to learn more about</label>
-            <select name="otherGods">
-                <option value="egyptianGods">Egyptian Gods</option>
-                <option value="aztecGods">Aztec Gods</option>
-                <option value="norseGods">Norse Gods</option>
+            <select name="otherGods" id ="otherGods" onchange="changeContent()">
+                <option value="0">Egyptian Gods</option>
+                <option value="1">Aztec Gods</option>
+                <option value="2">Norse Gods</option>
             </select>
         </div>
         <div id="otherGodContent"></div>
     </div>
 </body>
 </html>
+<script>
+    const egpytianContent = `<div>Egyptian Content</div>`;
+    const aztecContent = `<div>Aztec Content</div>`;
+    const norseContent = `<div>Norse Content</div>`;
+    const otherContent = [egpytianContent, aztecContent, norseContent];
+    const changeContent = () => {
+        let otherGodsSelect = document.querySelector("#otherGods");
+        if (otherGodsSelect) {
+            let otherGodContent = document.querySelector("#otherGodContent");
+            otherGodContent.innerHTML = otherContent[otherGodsSelect.value];
+        }
+    }
+</script>
