@@ -19,7 +19,7 @@ select {
     text-align: center;
     font-size: larger;
     border: none;
-    background-color: #f1f1f1;
+    background-color: #d9d9d9;
 }
 select:hover, option:hover {
     cursor: pointer;
@@ -77,7 +77,7 @@ th>a {
     /* flex-direction: column; */
     /* align-items: center; */
     background: #f1f1f1;
-    height: 40px;
+    /* height: 40px; */
     margin-left: -8px;
 }
 .otherSelect:hover, select:hover {
@@ -98,8 +98,8 @@ th>a {
     cursor: pointer;
     font-size: 1.2em;
 }
-.tabs.selected {
-    background-color: #d9d9d9;;
+.selected {
+    background-color: #d9d9d9;
 }
 .tabs:hover {
     background-color: #d0d0d0;
