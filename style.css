@@ -13,6 +13,11 @@ body {
 h1 {
     font-family: Helvetica, Arial, sans-serif;
 }
+select {
+    padding: 10px;
+    width: fit-content;
+    text-align: center;
+}
 td {
     padding: 5px;
 }
@@ -61,6 +66,10 @@ th>a {
 .otherSelect {
     padding: 10px 0;
     margin-bottom: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .tableImg:hover {
     transform: scale(1.05);
@@ -82,6 +91,9 @@ th>a {
 .tabs:hover {
     background-color: #d0d0d0;
     transition: all ease 500ms;
+}
+#otherGods {
+    margin-top: 20px;
 }
 @media (max-width: 600px) {
     .tabsWrapper {
