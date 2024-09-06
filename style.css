@@ -3,6 +3,7 @@
 }
 :root {
     --primary: #F5EBE0;
+    --secondary: #FBFBF2;
     --hover: #D6CCC2;
     --selected: #E3D5CA;
     --shadow: #88888847;
@@ -15,6 +16,7 @@ a:visited {
 }
 body {
     margin: 0;
+    background-color: var(--secondary);
 }
 h1 {
     font-family: Helvetica, Arial, sans-serif;
@@ -66,7 +68,7 @@ th>a {
 }
 .mainContent {
     max-width: 1200px;
-    margin: 0 auto
+    margin: 0 auto;
 }
 .mainContentInner>p {
     font-size: 1.1em;
