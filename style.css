@@ -18,6 +18,8 @@ select {
     width: fit-content;
     text-align: center;
     font-size: larger;
+    border: none;
+    background-color: #f1f1f1;
 }
 select:hover, option:hover {
     cursor: pointer;
@@ -69,11 +71,18 @@ th>a {
 }
 .otherSelect {
     padding: 10px 0;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+    background: #f1f1f1;
+    height: 40px;
+    margin-left: -8px;
+}
+.otherSelect:hover, select:hover {
+    background-color: #d0d0d0;
+    transition: all ease 500ms;
 }
 .tableImg:hover {
     transform: scale(1.05);
@@ -97,7 +106,7 @@ th>a {
     transition: all ease 500ms;
 }
 #otherGods {
-    margin-top: 20px;
+    /* margin-top: 20px; */
 }
 @media (max-width: 600px) {
     .tabsWrapper {

@@ -13,30 +13,29 @@
             <a href="index.html"><div class="tabs">Home</div></a>
             <a href="greek-gods.html"><div class="tabs">Greek Gods</div></a>
             <a href="roman-gods.html"><div class="tabs">Roman Gods</div></a>
-            <a href="other-gods.html"><div class="tabs selected">Other Gods</div></a>
+            <div class="otherSelect">
+                <!-- <label for="otherGods">Select who you want to learn more about</label> -->
+                <select name="otherGods" id ="otherGods" onchange="changeContent()">
+                    <option value="" disabled selected>Other Gods</option>
+                    <option value="0">Egyptian Gods</option>
+                    <option value="1">Aztec Gods</option>
+                    <option value="2">Norse Gods</option>
+                </select>
+            </div>
         </div>
     </header>
     <div class="mainContent">
-        <h1>Other Gods</h1>
-        <div class="otherSelect">
-            <!-- <label for="otherGods">Select who you want to learn more about</label> -->
-            <select name="otherGods" id ="otherGods" onchange="changeContent()">
-                <option value="" disabled selected>Select an option</option>
-                <option value="0">Egyptian Gods</option>
-                <option value="1">Aztec Gods</option>
-                <option value="2">Norse Gods</option>
-            </select>
-        </div>
         <div id="otherGodContent">
-            <div class="godsDescription" style="text-align: center; font-size: larger;">Select an option above to learn more about gods in other cultures</div>
+            <h1>Other Gods</h1>
+            <div class="godsDescription" style="text-align: center; font-size: larger;">Select an option in the header above to learn more about gods in other cultures</div>
         </div>
     </div>
 </body>
 </html>
 <script>
-    const egpytianContent = `<div class="godsBanner"><img src="egyptian-gods-banner.png" alt="Coffin panel with paintings of funerary rituals"></div><div class="godsDescription"><p>Egypt has a pantheon of more than 1,500 named gods that makes up a complex religious system that spanned hundreds of years. The principal god, Ra, was the god of the sun, life, and creation. The Egyptians also believed that Ra was the first pharaoh of Egypt. Other notable Egyptian gods are Osiris, god of death; Isis, wife of Osiris; Horus, son of Osiris and Isis; Seth, god of War; Anubis, god of the dead; and Hapi, god of the flooding of the Nile. One of the most known Egyptian myths is that of Osiris, who was a king of Egypt that got murdered and then dismembered by his brother, Seth. Isis, his wife, reassembled his body and resurrected Osiris, enabling them to have and heir, Horus.</p></div>`;
-    const aztecContent = `<div class="godsBanner"><img src="aztec-gods-banner.png" alt="Sculpture depicting the Aztec sun deity Tonatiuh"></div>`;
-    const norseContent = `<div class="godsBanner"><img src="norse-gods-banner.png" alt="Painting of Iduna, Daughter of Svald by James Penrose"></div>`;
+    const egpytianContent = `<h1>Egyptian Gods</h1><div class="godsBanner"><img src="egyptian-gods-banner.png" alt="Coffin panel with paintings of funerary rituals"></div><div class="godsDescription"><p>Egypt has a pantheon of more than 1,500 named gods that makes up a complex religious system that spanned hundreds of years. The principal god, Ra, was the god of the sun, life, and creation. The Egyptians also believed that Ra was the first pharaoh of Egypt. Other notable Egyptian gods are Osiris, god of death; Isis, wife of Osiris; Horus, son of Osiris and Isis; Seth, god of War; Anubis, god of the dead; and Hapi, god of the flooding of the Nile. One of the most known Egyptian myths is that of Osiris, who was a king of Egypt that got murdered and then dismembered by his brother, Seth. Isis, his wife, reassembled his body and resurrected Osiris, enabling them to have and heir, Horus.</p></div>`;
+    const aztecContent = `<h1>Aztec Gods</h1><div class="godsBanner"><img src="aztec-gods-banner.png" alt="Sculpture depicting the Aztec sun deity Tonatiuh"></div>`;
+    const norseContent = `<h1>Norse Gods</h1><div class="godsBanner"><img src="norse-gods-banner.png" alt="Painting of Iduna, Daughter of Svald by James Penrose"></div>`;
     const otherContent = [egpytianContent, aztecContent, norseContent];
     const changeContent = () => {
         let otherGodsSelect = document.querySelector("#otherGods");
