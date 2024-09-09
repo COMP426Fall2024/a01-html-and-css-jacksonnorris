@@ -10,6 +10,7 @@
 }
 a {
     text-decoration: none;
+    color: inherit;
 }
 a:visited {
     color: inherit;
@@ -34,9 +35,6 @@ td {
 }
 th {
     font-size: 1.6em;
-}
-th>a {
-    /* text-decoration: underline; */
 }
 .aboutInformation {
     display: flex; 
@@ -82,7 +80,6 @@ th>a {
 }
 .homeTable {
     width: 100%;
-    /* border: 2px solid black; */
     padding: 10px 20px;
     border-radius: 10px;
     background-color: var(--primary);
@@ -101,13 +98,8 @@ th>a {
 }
 .otherSelect {
     padding: 10px 0;
-    /* margin-bottom: 20px; */
     text-align: center;
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* align-items: center; */
     background: var(--primary);
-    /* height: 40px; */
     margin-left: -8px;
 }
 .otherSelect:hover, select:hover {
